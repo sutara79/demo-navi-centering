@@ -1,0 +1,25 @@
+.globalnavi {
+  background-color: gray;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+.globalnavi li {
+  color: white;
+  padding: 10px;
+}
+/**
+ * IE8では nth-child は使えないので、各項目にクラスを設定する。
+ */
+.globalnavi .item-01 {
+  background-color: red;
+}
+.globalnavi .item-02 {
+  background-color: green;
+}
+.globalnavi .item-03 {
+  background-color: blue;
+}
+.globalnavi .item-04 {
+  background-color: purple;
+}

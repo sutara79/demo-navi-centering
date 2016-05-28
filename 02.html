@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>display: inline-block;を使う</title>
+<link rel="stylesheet" href="common.css">
+<style>
+.globalnavi {
+  text-align: center;
+}
+.globalnavi li {
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+<h1>display: inline-block;を使う</h1>
+<ul class="globalnavi">
+  <li class="item-01">ホーム</li>
+  <li class="item-02">製品一覧</li>
+  <li class="item-03">会社概要</li>
+  <li class="item-04">お問い合わせ</li>
+</ul>
+<h3>隙間を埋める方法</h3>
+<ul class="globalnavi navi2">
+  <li class="item-01">ホーム</li><!-- ソース中の改行などは画面では空白として表示されるので、コメント内に取り込む。
+  --><li class="item-02">製品一覧</li><!--
+  --><li class="item-03">会社概要</li><!--
+  --><li class="item-04">お問い合わせ</li>
+</ul>
+</body>
+</html>

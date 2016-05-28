@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>floatを使う</title>
+<link rel="stylesheet" href="common.css">
+<style>
+.globalnavi {
+  width: 370px; /* 各項目の幅の合計値 */
+  margin: 0 auto;
+}
+.globalnavi li {
+  float: left;
+  text-align: center;
+}
+.globalnavi .item-01 {
+  width: 50px;
+}
+.globalnavi .item-02 {
+  width: 70px;
+}
+.globalnavi .item-03 {
+  width: 70px;
+}
+.globalnavi .item-04 {
+  width: 100px;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<h1>floatを使う</h1>
+<ul class="globalnavi clearfix">
+  <li class="item-01">ホーム</li>
+  <li class="item-02">製品一覧</li>
+  <li class="item-03">会社概要</li>
+  <li class="item-04">お問い合わせ</li>
+</ul>
+</body>
+</html>
